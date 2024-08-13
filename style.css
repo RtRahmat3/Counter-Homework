@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1rem;
+}
+
+.main-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+ #daymode{
+    background-color:white;
+    font-size: 1rem;
+
+}
+
+
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+
+#Count {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 1.5rem;
+    margin-top: 0.2rem;
+}
+.countdiv{
+    display: flex;
+    gap: 2rem;
+    
+}
+.count{
+    color: red;
+    font-size: 2rem;
+    margin-top: 5px;
+    font-weight: bold;
+    
+}
+
+#value-label {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #007bff;
+    /* background-color: red; */
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.inner-container-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input {
+    width: 80%;
+    padding: 0.7rem;
+    margin-bottom: 0.7rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 1rem;
+    }
+
+    #Count {
+        font-size: 2.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .inner-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        margin: 0.1rem;
+    }
+
+    #input {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    #submit {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
